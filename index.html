@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/62e6278cdc.js" crossorigin="anonymous"></script>
+        <title>itzme1on</title>
+        <script type="text/javascript" src="scripts/particles.min.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
+        <script> 
+            document.onkeydown = function(e) { 
+                if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {} 
+                return false; 
+            }; 
+        </script>
+    
+        <script> 
+            function click() { 
+                if (event.button==2||event.button==3) { 
+                    oncontextmenu='return false'; 
+                }
+            } 
+            document.onmousedown=click 
+            document.oncontextmenu = new Function("return false;") 
+        </script>
+    
+        <script>
+            function disableWheelScroll() { 
+                if (document.body.addEventListener) document.body.addEventListener('DOMMouseScroll', blockWheel, false);
+                document.body.onmousewheel = blockWheel;
+            }
+
+            function blockWheel(event) {
+                if (!event) event = window.event;
+                if (event.stopPropagation) event.stopPropagation();
+                else event.cancelBubble = true;
+                if(event.preventDefault) event.preventDefault();
+                else event.returnValue = false;
+            }
+        
+            disableWheelScroll();
+        </script>
+    </head>
+    <body>
+        <div id="particles-js">
+            <div class="content">
+                <div class="index-content">
+                    <a href="#/about" class="title">itzme1on</a>
+                    <div class="icons-section">
+                        <div class="icon-item">
+                            <a href="tg://resolve?domain=itzme1on" target="_blank">
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                        </div>
+                        <div class="icon-item">
+                            <a href="https://github.com/itzme1on" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="icon-item">
+                            <a href="https://reddit.com/u/itzme1on" target="_blank">
+                                <i class="fab fa-reddit-alien"></i>
+                            </a>
+                    </div>
+                    <div class="icon-item">
+                        <a href="https://discord.gg/3nGtSrs" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                    <div class="icon-item">
+                        <a href="https://steamcommunity.com/profiles/76561198983761897" target="_blank">
+                            <i class="fab fa-steam"></i>
+                        </a>
+                    </div>
+                    <div class="icon-item">
+                        <a href="https://twitch.tv/itzme1on" target="_blank">
+                            <i class="fab fa-twitch"></i>
+                        </a>
+                    </div>
+                    <div class="icon-item">
+                        <a href="https://twitter.com/itzme1on" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </body>
+</html>

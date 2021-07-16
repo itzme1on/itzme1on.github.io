@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Paskowy";
+    src: url("./fonts/Paskowy.eot") format("eot"),
+         url("./fonts/Paskowy.woff") format("woff"),
+         url("./fonts/Paskowy.ttf") format("truetype"),
+         url("./fonts/Paskowy.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body, html {
+    background-color: #212121;
+    font-family: Paskowy;
+    background-size: cover;
+}
+
+.content {
+    max-width: 20%;
+    max-height: 0;
+    width: 100%;
+    height: 100%;
+    margin: 32vh auto 0;
+    position: absolute;
+}
+
+.index-content {
+    max-height: 760px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.index-content > a {
+    margin: 20px;
+}
+
+.index-content > .title {
+    color: #EFEFEF;
+    font-size: 120px;
+    display: block;
+    text-decoration: none;
+}
+
+.icons-section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.icons-section > .icon-item > a {
+    color: #EFEFEF;
+    font-size: 35px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.icons-section > .icon-item > a:hover {
+    transition: 0.5s;
+    font-size: 45px;
+}
+
+.icons-section > .icon-item > a:not(:hover) {
+    transition: 0.5s;
+}
+
+#particles-js {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
